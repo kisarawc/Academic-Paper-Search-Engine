@@ -1,4 +1,4 @@
-spacy
+spacy==3.0.0
 pandas
 streamlit
 sentence-transformers
