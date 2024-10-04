@@ -1,7 +1,8 @@
+spacy
 pandas
 streamlit
 sentence-transformers
 torch
 nltk
 scikit-learn
-spacy
+

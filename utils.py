@@ -1,5 +1,5 @@
-import pandas as pd
 import spacy
+import pandas as pd
 import numpy as np
 import nltk
 import re
@@ -9,9 +9,10 @@ import torch
 import streamlit as st
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity as tfidf_cosine_similarity
-from spacy.cli import download
 
+# Load the spaCy model
 nlp = spacy.load('en_core_web_sm')
+
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
 

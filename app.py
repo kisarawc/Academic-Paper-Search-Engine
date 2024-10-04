@@ -1,3 +1,4 @@
+import spacy
 import streamlit as st
 from utils import load_data, search, get_unique_authors, get_unique_categories
 import nltk
