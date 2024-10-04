@@ -5,4 +5,4 @@ sentence-transformers
 torch
 nltk
 scikit-learn
-
+en_core_web_sm
