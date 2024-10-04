@@ -8,6 +8,9 @@ import os
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 from datetime import datetime 
+from spacy.cli import download
+
+nlp = spacy.load("en_core_web_sm")
 
 st.set_page_config(
     page_title="Academic Paper Search Engine",
