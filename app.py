@@ -181,7 +181,7 @@ if st.session_state.search_results is not None:
     st.session_state.num_relevant_docs = num_relevant_docs
 
     
-    json_keyfile = 'C:/Users/Chathuka/Desktop/Y3S1/proj/irwa/acadamic-search-engine-3dc54b7224d2.json' 
+    json_keyfile = 'acadamic-search-engine-3dc54b7224d2.json' 
     client = authenticate_google_sheets(json_keyfile)
 
    
