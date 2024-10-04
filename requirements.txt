@@ -4,4 +4,4 @@ sentence-transformers
 torch
 nltk
 scikit-learn
-spacy[transformers]
+spacy
