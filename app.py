@@ -166,19 +166,19 @@ if st.session_state.search_results is not None:
     
     st.write(f"Total Documents: {st.session_state.total_docs}")
 
-    if st.session_state.total_docs > 0:
-        num_relevant_docs = st.number_input(
-            "How many documents are relevant?", 
-            min_value=0,
-            max_value=st.session_state.total_docs, 
-            value=st.session_state.num_relevant_docs
-        )
-    else:
-        st.warning("No documents available to evaluate. Please refine your search.")
-        num_relevant_docs = 0 
+    # if st.session_state.total_docs > 0:
+    #     num_relevant_docs = st.number_input(
+    #         "How many documents are relevant?", 
+    #         min_value=0,
+    #         max_value=st.session_state.total_docs, 
+    #         value=st.session_state.num_relevant_docs
+    #     )
+    # else:
+    #     st.warning("No documents available to evaluate. Please refine your search.")
+    #     num_relevant_docs = 0 
 
     
-    st.session_state.num_relevant_docs = num_relevant_docs
+    # st.session_state.num_relevant_docs = num_relevant_docs
 
     
     json_keyfile = 'acadamic-search-engine-3dc54b7224d2.json' 
