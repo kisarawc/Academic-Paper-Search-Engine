@@ -15,6 +15,7 @@ nlp = spacy.load('en_core_web_sm')
 nltk.download('punkt_tab')  
 nltk.download('punkt')  
 nltk.download('stopwords')
+nltk.download('wordnet')
 
 st.set_page_config(
     page_title="Academic Paper Search Engine",
