@@ -10,9 +10,21 @@ import streamlit as st
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity as tfidf_cosine_similarity
 from spacy.cli import download
+import os
 
-nlp = spacy.load('en_core_web_sm')
+def load_spacy_model(model_name='en_core_web_sm'):
+    try:
+        nlp = spacy.load(model_name)
+    except OSError:
+        print(f"{model_name} model not found. Downloading...")
+        download(model_name)  
+        nlp = spacy.load(model_name) 
+    return nlp
+
+
+nlp = load_spacy_model()
 model = SentenceTransformer('all-MiniLM-L6-v2')
+
 
 @st.cache_data
 def load_data(file_path):
