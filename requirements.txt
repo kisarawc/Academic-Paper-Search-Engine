@@ -5,4 +5,3 @@ torch
 nltk
 scikit-learn
 spacy
-en-core-web-sm
