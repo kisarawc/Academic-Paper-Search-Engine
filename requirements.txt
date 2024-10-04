@@ -1,8 +1,8 @@
-spacy==3.8.2
+spacy==3.6.0
 pandas
 streamlit
 sentence-transformers
 torch
 nltk
-scikit-learn
+scikit-learn==1.5.2
 en_core_web_sm
