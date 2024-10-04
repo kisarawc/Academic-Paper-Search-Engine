@@ -10,12 +10,8 @@ from oauth2client.service_account import ServiceAccountCredentials
 from datetime import datetime 
 from spacy.cli import download
 
-try:
-    nlp = spacy.load('en_core_web_sm')
-except OSError:
-    download("en_core_web_sm")
-    nlp = spacy.load('en_core_web_sm')
-    
+nlp = spacy.load('en_core_web_sm')
+
 st.set_page_config(
     page_title="Academic Paper Search Engine",
     page_icon="📄",
